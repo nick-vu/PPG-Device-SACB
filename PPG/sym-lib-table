@@ -1,0 +1,10 @@
+(sym_lib_table
+  (lib (name EEG_ADS1299_2-cache)(type Legacy)(uri D:/Documents/GitHub/Low-power-ecg/EEG_ADS1299_2-cache.lib)(options "")(descr ""))
+  (lib (name tps62746)(type Legacy)(uri D:/Documents/GitHub/Low-power-ecg/tps62746.lib)(options "")(descr ""))
+  (lib (name BMI160)(type Legacy)(uri D:/Documents/GitHub/Low-power-ecg/BMI160.lib)(options "")(descr ""))
+  (lib (name MAX30003CTI+)(type Legacy)(uri D:/Documents/GitHub/Low-power-ecg/MAX30003CTI+.lib)(options "")(descr ""))
+  (lib (name SSAJ120100)(type Legacy)(uri D:/Documents/GitHub/Low-power-ecg/SSAJ120100.lib)(options "")(descr ""))
+  (lib (name MAX30102EFD_)(type Legacy)(uri D:/Documents/GitHub/PPG-Device-SACB/PPG/MAX30102EFD_.lib)(options "")(descr ""))
+  (lib (name LTC3403EDDPBF)(type Legacy)(uri D:/Documents/GitHub/PPG-Device-SACB/PPG/LTC3403EDDPBF.lib)(options "")(descr ""))
+  (lib (name TPS62743YFPT)(type Legacy)(uri D:/Documents/GitHub/PPG-Device-SACB/PPG/TPS62743YFPT.lib)(options "")(descr ""))
+)

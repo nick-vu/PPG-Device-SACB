@@ -1,0 +1,1394 @@
+EESchema Schematic File Version 4
+LIBS:PPG-cache
+EELAYER 26 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C?
+U 1 1 588ADF4C
+P 17400 5850
+F 0 "C?" H 17400 5950 40  0000 L CNN
+F 1 "1.0pF" H 17406 5765 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 17438 5700 30  0001 C CNN
+F 3 "~" H 17400 5850 60  0000 C CNN
+	1    17400 5850
+	0    -1   -1   0   
+$EndComp
+Text Notes 16950 5450 0    60   ~ 0
+This network will need to be tuned
+Text Label 2550 6700 0    60   ~ 0
+SWDCLK
+Text Notes 1300 5350 0    60   ~ 0
+No reverse polarity protection;\nuse caution and do not connect\nbattery and debugger at same time!
+Text Label 2300 5650 0    60   ~ 0
+BATT_IN
+Text Notes 1150 6300 0    60   ~ 0
+Vcc = Raw battery signal
+Text Label 2550 6800 0    60   ~ 0
+SWDIO
+Text GLabel 17650 6550 3    60   Input ~ 0
+DGND
+Text Label 7700 4200 2    60   ~ 0
+LED2
+Text Label 7700 3900 2    60   ~ 0
+LED3
+Text Notes 5600 3400 0    60   ~ 0
+[Temporary] LEDs for Debugging
+Text GLabel 16600 6450 2    60   Input ~ 0
+DGND
+Text GLabel 14750 6500 3    60   Input ~ 0
+DGND
+Text Label 16750 5850 0    60   ~ 0
+RF
+$Comp
+L Device:Crystal X?
+U 1 1 5980527C
+P 10600 6000
+F 0 "X?" H 10600 6150 50  0000 C CNN
+F 1 "32.768 kHz" H 10600 5850 50  0000 C CNN
+F 2 "Crystals:Crystal_SMD_2012-2pin_2.0x1.2mm" H 10600 6000 50  0001 C CNN
+F 3 "" H 10600 6000 50  0001 C CNN
+	1    10600 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 59805BFF
+P 10050 5850
+F 0 "C?" H 10075 5950 50  0000 L CNN
+F 1 "12pF" H 10075 5750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 10088 5700 50  0001 C CNN
+F 3 "" H 10050 5850 50  0001 C CNN
+	1    10050 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 59806395
+P 10050 6100
+F 0 "C?" H 10075 6200 50  0000 L CNN
+F 1 "12pF" H 10075 6000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 10088 5950 50  0001 C CNN
+F 3 "" H 10050 6100 50  0001 C CNN
+	1    10050 6100
+	0    1    1    0   
+$EndComp
+Text GLabel 9750 6200 0    60   Input ~ 0
+DGND
+Text Label 13900 7250 1    60   ~ 0
+SWDCLK
+Text Label 14000 7250 1    60   ~ 0
+SWDIO
+$Comp
+L Device:Crystal_GND24 X?
+U 1 1 598095F5
+P 14050 5600
+F 0 "X?" H 14175 5800 50  0000 L CNN
+F 1 "Crystal_GND24" H 14175 5725 50  0000 L CNN
+F 2 "Crystals:Crystal_SMD_2016-4pin_2.0x1.6mm" H 14050 5600 50  0001 C CNN
+F 3 "" H 14050 5600 50  0001 C CNN
+	1    14050 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5980A64F
+P 14000 5150
+F 0 "C?" H 14025 5250 50  0000 L CNN
+F 1 "12pF" H 14025 5050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 14038 5000 50  0001 C CNN
+F 3 "" H 14000 5150 50  0001 C CNN
+	1    14000 5150
+	0    1    1    0   
+$EndComp
+Text GLabel 14050 5950 2    60   Input ~ 0
+DGND
+$Comp
+L Device:C C?
+U 1 1 5980B705
+P 14500 5600
+F 0 "C?" H 14525 5700 50  0000 L CNN
+F 1 "12pF" H 14525 5500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 14538 5450 50  0001 C CNN
+F 3 "" H 14500 5600 50  0001 C CNN
+	1    14500 5600
+	0    1    1    0   
+$EndComp
+Text GLabel 15050 5150 2    60   Input ~ 0
+DGND
+Text GLabel 12250 4600 2    60   Input ~ 0
+DGND
+$Comp
+L Device:C C?
+U 1 1 5980CF43
+P 11850 8500
+F 0 "C?" H 11875 8600 50  0000 L CNN
+F 1 "100nF" H 11875 8400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 11888 8350 50  0001 C CNN
+F 3 "" H 11850 8500 50  0001 C CNN
+	1    11850 8500
+	1    0    0    -1  
+$EndComp
+Text GLabel 11850 8750 3    60   Input ~ 0
+DGND
+$Comp
+L Device:C C?
+U 1 1 5980D3F1
+P 13600 5450
+F 0 "C?" H 13625 5550 50  0000 L CNN
+F 1 "100nF" H 13625 5350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 13638 5300 50  0001 C CNN
+F 3 "" H 13600 5450 50  0001 C CNN
+	1    13600 5450
+	1    0    0    -1  
+$EndComp
+Text GLabel 13600 5150 1    60   Input ~ 0
+DGND
+Text Label 11850 8250 1    60   ~ 0
+VDD_nRF
+Text Label 13600 5650 1    60   ~ 0
+VDD_nRF
+$Comp
+L Device:C C?
+U 1 1 5980E790
+P 11850 4550
+F 0 "C?" H 11875 4650 50  0000 L CNN
+F 1 "4.7µF" H 11875 4450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 11888 4400 50  0001 C CNN
+F 3 "" H 11850 4550 50  0001 C CNN
+	1    11850 4550
+	1    0    0    -1  
+$EndComp
+Text Label 11850 5050 1    60   ~ 0
+VDD_nRF
+Text GLabel 11850 4300 2    60   Input ~ 0
+DGND
+$Comp
+L Device:C C?
+U 1 1 59811F52
+P 14000 4300
+F 0 "C?" H 14025 4400 50  0000 L CNN
+F 1 "1.0µF" H 14025 4200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 14038 4150 50  0001 C CNN
+F 3 "" H 14000 4300 50  0001 C CNN
+	1    14000 4300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 14400 4300 2    60   Input ~ 0
+DGND
+Text Label 13950 6050 2    60   ~ 0
+DEC3
+Text Label 13950 6150 2    60   ~ 0
+DEC2
+Text Label 10850 5750 0    60   ~ 0
+DEC1
+$Comp
+L Device:C C?
+U 1 1 59819979
+P 15850 4350
+F 0 "C?" H 15875 4450 50  0000 L CNN
+F 1 "100nF" H 15875 4250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 15888 4200 50  0001 C CNN
+F 3 "" H 15850 4350 50  0001 C CNN
+	1    15850 4350
+	1    0    0    -1  
+$EndComp
+Text Label 15850 3550 3    60   ~ 0
+DEC1
+Text GLabel 15850 4650 3    60   Input ~ 0
+DGND
+$Comp
+L Device:C C?
+U 1 1 59819FCC
+P 16400 4350
+F 0 "C?" H 16425 4450 50  0000 L CNN
+F 1 "N.C." H 16425 4250 50  0000 L CNN
+F 2 "" H 16438 4200 50  0001 C CNN
+F 3 "" H 16400 4350 50  0001 C CNN
+	1    16400 4350
+	1    0    0    -1  
+$EndComp
+Text Label 16400 3550 3    60   ~ 0
+DEC2
+Text GLabel 16400 4650 3    60   Input ~ 0
+DGND
+$Comp
+L Device:C C?
+U 1 1 5981A678
+P 16850 4350
+F 0 "C?" H 16875 4450 50  0000 L CNN
+F 1 "100pF" H 16875 4250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 16888 4200 50  0001 C CNN
+F 3 "" H 16850 4350 50  0001 C CNN
+	1    16850 4350
+	1    0    0    -1  
+$EndComp
+Text Label 16850 3550 3    60   ~ 0
+DEC3
+Text GLabel 16850 4650 3    60   Input ~ 0
+DGND
+Text Label 10850 7600 2    60   ~ 0
+LED2
+Text Label 10850 7700 2    60   ~ 0
+LED3
+Text GLabel 10550 6300 0    60   Input ~ 0
+DGND
+Text Label 6300 2400 0    60   ~ 0
+LOAD_SW_CTRL
+Text Label 8750 6450 0    60   ~ 0
+LOAD_SW_CTRL
+$Comp
+L Device:R R?
+U 1 1 59C8E2A5
+P 8850 2650
+F 0 "R?" V 8930 2650 50  0000 C CNN
+F 1 "1M" V 8850 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 8780 2650 50  0001 C CNN
+F 3 "" H 8850 2650 50  0000 C CNN
+	1    8850 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 59C8E5B5
+P 8500 2400
+F 0 "R?" V 8580 2400 50  0000 C CNN
+F 1 "1M" V 8500 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 8430 2400 50  0001 C CNN
+F 3 "" H 8500 2400 50  0000 C CNN
+	1    8500 2400
+	0    -1   -1   0   
+$EndComp
+Text Label 8750 6550 0    60   ~ 0
+AIN_BAT_DIV_VOLTAGE
+Text GLabel 4100 5550 2    60   Input ~ 0
+5V_in_charge
+$Comp
+L Device:C C?
+U 1 1 5B1764C1
+P 2000 3450
+F 0 "C?" H 2000 3550 40  0000 L CNN
+F 1 "4.7uF" H 2006 3365 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2038 3300 30  0001 C CNN
+F 3 "~" H 2000 3450 60  0000 C CNN
+	1    2000 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B176D1F
+P 2350 3850
+F 0 "C?" H 2350 3950 40  0000 L CNN
+F 1 "4.7uF" H 2356 3765 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2388 3700 30  0001 C CNN
+F 3 "~" H 2350 3850 60  0000 C CNN
+	1    2350 3850
+	0    1    1    0   
+$EndComp
+Text GLabel 1750 3450 0    60   Input ~ 0
+DGND
+Text GLabel 1750 1450 0    60   Input ~ 0
+5V_in_charge
+$Comp
+L Device:R R?
+U 1 1 5B1793C8
+P 4050 3300
+F 0 "R?" V 4130 3300 50  0000 C CNN
+F 1 "2k" V 4050 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 3980 3300 50  0001 C CNN
+F 3 "" H 4050 3300 50  0000 C CNN
+	1    4050 3300
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3850 3450
+Text GLabel 4050 3550 2    60   Input ~ 0
+DGND
+Text Label 2750 3950 0    60   ~ 0
+BATT_IN
+$Comp
+L Device:D_Schottky D?
+U 1 1 5B32763D
+P 3350 1600
+F 0 "D?" H 3350 1700 50  0000 C CNN
+F 1 "D_Schottky" H 3350 1500 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 3350 1600 50  0001 C CNN
+F 3 "" H 3350 1600 50  0001 C CNN
+	1    3350 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B327772
+P 4100 1850
+F 0 "R?" V 4180 1850 50  0000 C CNN
+F 1 "100k" V 4100 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4030 1850 50  0001 C CNN
+F 3 "" H 4100 1850 50  0000 C CNN
+	1    4100 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 3350 2300 0    60   Input ~ 0
+DGND
+Text Label 2100 1800 2    60   ~ 0
+BATT_IN
+Text GLabel 1900 3200 0    60   Input ~ 0
+5V_in_charge
+$Comp
+L Device:C C?
+U 1 1 5B33A20E
+P 3350 2050
+F 0 "C?" H 3350 2150 40  0000 L CNN
+F 1 "1.0uF" H 3356 1965 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3388 1900 30  0001 C CNN
+F 3 "~" H 3350 2050 60  0000 C CNN
+	1    3350 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	18350 5800 18350 5850
+Wire Wire Line
+	16450 5850 17250 5850
+Wire Wire Line
+	17550 5850 17650 5850
+Connection ~ 17650 5850
+Wire Notes Line
+	17250 5500 17250 6450
+Wire Notes Line
+	17250 6450 18250 6450
+Wire Notes Line
+	18250 6450 18250 5500
+Wire Notes Line
+	18250 5500 17250 5500
+Wire Wire Line
+	1900 6800 2550 6800
+Wire Wire Line
+	14300 6300 14750 6300
+Wire Wire Line
+	16450 6300 16600 6300
+Wire Wire Line
+	16600 6300 16600 6450
+Connection ~ 14750 6300
+Wire Wire Line
+	13600 6350 14350 6350
+Wire Wire Line
+	14350 6350 14350 5850
+Wire Wire Line
+	14350 5850 14850 5850
+Wire Wire Line
+	10200 5850 10600 5850
+Connection ~ 10600 5850
+Wire Wire Line
+	9900 6100 9750 6100
+Wire Wire Line
+	9750 5850 9750 6100
+Wire Wire Line
+	9750 5850 9900 5850
+Connection ~ 9750 6100
+Wire Wire Line
+	11200 5950 10900 5950
+Wire Wire Line
+	10900 5950 10900 6150
+Wire Wire Line
+	10900 6150 10600 6150
+Wire Wire Line
+	10250 6150 10250 6100
+Wire Wire Line
+	10250 6100 10200 6100
+Connection ~ 10600 6150
+Wire Wire Line
+	14000 6750 14000 7250
+Wire Wire Line
+	13900 6850 13900 7250
+Wire Wire Line
+	14000 6750 13600 6750
+Wire Wire Line
+	13600 6850 13900 6850
+Wire Wire Line
+	13800 5950 13600 5950
+Wire Wire Line
+	13800 5150 13800 5600
+Wire Wire Line
+	13800 5600 13900 5600
+Wire Wire Line
+	13800 5150 13850 5150
+Connection ~ 13800 5600
+Wire Wire Line
+	14050 5400 14250 5400
+Wire Wire Line
+	14250 5400 14250 5150
+Connection ~ 14250 5150
+Wire Wire Line
+	14150 5150 14250 5150
+Wire Wire Line
+	14050 5800 14050 5950
+Wire Wire Line
+	13600 5850 14250 5850
+Wire Wire Line
+	14250 5850 14250 5600
+Wire Wire Line
+	14200 5600 14250 5600
+Connection ~ 14250 5600
+Wire Wire Line
+	14650 5600 14800 5600
+Wire Wire Line
+	14800 5600 14800 5150
+Connection ~ 14800 5150
+Wire Wire Line
+	12150 5150 12150 4600
+Wire Wire Line
+	12150 4600 12250 4600
+Wire Wire Line
+	11850 7550 11850 8350
+Wire Wire Line
+	13600 5150 13600 5300
+Wire Wire Line
+	13600 5700 13600 5600
+Wire Wire Line
+	11850 4700 11850 5150
+Wire Wire Line
+	11850 4400 11850 4300
+Wire Wire Line
+	11950 5150 11950 4450
+Wire Wire Line
+	11950 4450 12300 4450
+Wire Wire Line
+	12300 4450 12300 4300
+Wire Wire Line
+	12300 4300 12350 4300
+Wire Wire Line
+	12050 5150 12050 4500
+Wire Wire Line
+	12050 4500 13700 4500
+Wire Wire Line
+	13700 4500 13700 4300
+Wire Wire Line
+	13700 4300 13850 4300
+Wire Wire Line
+	14150 4300 14400 4300
+Wire Wire Line
+	13600 6050 13950 6050
+Wire Wire Line
+	13600 6150 13950 6150
+Wire Wire Line
+	10850 5750 11200 5750
+Wire Wire Line
+	15850 3550 15850 4200
+Wire Wire Line
+	15850 4500 15850 4650
+Wire Wire Line
+	16400 3550 16400 4200
+Wire Wire Line
+	16400 4500 16400 4650
+Wire Wire Line
+	16850 3550 16850 4200
+Wire Wire Line
+	16850 4500 16850 4650
+Wire Wire Line
+	11850 8750 11850 8650
+Wire Wire Line
+	11200 6050 10950 6050
+Wire Wire Line
+	10950 6050 10950 6300
+Wire Wire Line
+	10950 6300 10550 6300
+Wire Wire Line
+	12850 7550 12850 8000
+Wire Wire Line
+	11200 6850 11000 6850
+Wire Wire Line
+	11000 6850 11000 7600
+Wire Wire Line
+	11000 7600 10850 7600
+Wire Wire Line
+	10850 7700 11100 7700
+Wire Wire Line
+	11100 7700 11100 6950
+Wire Wire Line
+	11100 6950 11200 6950
+Wire Wire Line
+	14750 6300 14750 6500
+Wire Wire Line
+	13600 6250 14300 6250
+Wire Wire Line
+	14300 6250 14300 6300
+Wire Wire Line
+	4200 5650 4200 5900
+Wire Wire Line
+	2150 3450 2250 3450
+Wire Wire Line
+	2250 3450 2250 3300
+Wire Wire Line
+	2250 3200 1900 3200
+Wire Wire Line
+	2850 3300 2500 3300
+Connection ~ 2250 3300
+Wire Wire Line
+	2850 3450 2500 3450
+Wire Wire Line
+	2500 3450 2500 3300
+Connection ~ 2500 3300
+Wire Wire Line
+	2850 3650 2600 3650
+Wire Wire Line
+	2600 3650 2600 3800
+Wire Wire Line
+	2600 3800 2750 3800
+Wire Wire Line
+	2600 3850 2500 3850
+Connection ~ 2600 3800
+Wire Wire Line
+	1800 3850 2200 3850
+Wire Wire Line
+	1850 3450 1800 3450
+Wire Wire Line
+	1800 3450 1800 3850
+Connection ~ 1800 3450
+Wire Wire Line
+	3850 3550 3950 3550
+Wire Wire Line
+	3950 3400 3950 3550
+Wire Wire Line
+	3950 3650 3850 3650
+Connection ~ 3950 3550
+Wire Wire Line
+	4150 3800 3850 3800
+Wire Wire Line
+	3900 3300 3850 3300
+Wire Wire Line
+	3950 3400 4350 3400
+Wire Wire Line
+	4350 3400 4350 3300
+Wire Wire Line
+	4350 3300 4200 3300
+Connection ~ 2750 3800
+Wire Wire Line
+	2750 3950 2750 3800
+Text Notes 1050 900  0    60   ~ 0
+Load Sharing Circuit
+Text Notes 2500 1250 0    60   ~ 0
+Q1 = DMP21D5UFB4 P-mosfet\nCase: X2-DFN1006-3 
+Text Notes 2500 1350 0    60   ~ 0
+D4 = SMD Schottky Diode (0603)
+$Comp
+L Device:Q_PMOS_GDS Q?
+U 1 1 5B33625E
+P 2600 1700
+F 0 "Q?" V 2550 1600 50  0000 R CNN
+F 1 "DMP21D5UFB4-7B" V 2850 1850 50  0000 R CNN
+F 2 "pwr_pads:X2-DFN1006" H 2800 1800 50  0001 C CNN
+F 3 "" H 2600 1700 50  0000 C CNN
+	1    2600 1700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1750 1450 2600 1450
+Wire Wire Line
+	2600 1450 2600 1500
+Connection ~ 2600 1450
+Wire Wire Line
+	3350 1750 3350 1800
+Wire Wire Line
+	2800 1800 3350 1800
+Connection ~ 3350 1800
+Text Notes 3750 1600 0    60   ~ 0
+TO LOAD
+Wire Wire Line
+	2400 1800 2100 1800
+Wire Wire Line
+	3350 2200 3350 2300
+Wire Wire Line
+	4100 1450 4100 1700
+Connection ~ 3350 1450
+Wire Wire Line
+	3350 2300 4100 2300
+Wire Wire Line
+	4100 2300 4100 2000
+Text Notes 3350 4100 0    60   ~ 0
+R9 sets current limit\nNOTE: STAT PIN IS 5V
+Wire Wire Line
+	17650 5850 17700 5850
+Wire Wire Line
+	14750 6300 14850 6300
+Wire Wire Line
+	10600 5850 11200 5850
+Wire Wire Line
+	9750 6100 9750 6200
+Wire Wire Line
+	10600 6150 10250 6150
+Wire Wire Line
+	13800 5600 13800 5950
+Wire Wire Line
+	14250 5150 14800 5150
+Wire Wire Line
+	14250 5600 14350 5600
+Wire Wire Line
+	14800 5150 15050 5150
+Wire Wire Line
+	2250 3300 2250 3200
+Wire Wire Line
+	2500 3300 2250 3300
+Wire Wire Line
+	2600 3800 2600 3850
+Wire Wire Line
+	1800 3450 1750 3450
+Wire Wire Line
+	3950 3550 4050 3550
+Wire Wire Line
+	3950 3550 3950 3650
+Wire Wire Line
+	2750 3800 2850 3800
+Wire Wire Line
+	2600 1450 3350 1450
+Wire Wire Line
+	3350 1800 3350 1900
+Wire Wire Line
+	3350 1800 3650 1800
+Wire Wire Line
+	3350 1450 4100 1450
+Wire Notes Line
+	1050 900  4900 900 
+Wire Notes Line
+	4900 900  4900 2600
+Wire Notes Line
+	4900 2600 1050 2600
+Wire Notes Line
+	1050 2600 1050 900 
+Wire Notes Line
+	5200 4850 5200 7000
+Wire Notes Line
+	1050 7000 1050 4850
+Wire Notes Line
+	1050 4850 5200 4850
+Wire Notes Line
+	1050 7000 5200 7000
+Text Notes 1050 4850 0    60   ~ 0
+Connectors
+Wire Notes Line
+	1050 3000 5050 3000
+Wire Notes Line
+	5050 3000 5050 4500
+Wire Notes Line
+	5050 4500 1050 4500
+Wire Notes Line
+	1050 4500 1050 3000
+Text Notes 1050 3000 0    60   ~ 0
+Battery Recharge Circuit
+Wire Notes Line
+	5300 900  10900 900 
+Wire Notes Line
+	10900 900  10900 3100
+Wire Notes Line
+	10900 3100 5300 3100
+Wire Notes Line
+	5300 3100 5300 900 
+Text Notes 5300 900  0    60   ~ 0
+1.8V Regulator & Load Switch (For Battery Voltage Measurement)
+Wire Notes Line
+	5600 3400 8300 3400
+Wire Notes Line
+	8300 3400 8300 4600
+Wire Notes Line
+	8300 4600 5600 4600
+Wire Notes Line
+	5600 4600 5600 3400
+Wire Notes Line
+	18700 3400 18700 9500
+Wire Notes Line
+	18700 9500 8500 9500
+Wire Notes Line
+	8500 9500 8500 3400
+Wire Notes Line
+	8500 3400 18700 3400
+Text Notes 8500 3400 0    60   ~ 0
+Bluetooth LE Module (nRF52832)
+Wire Wire Line
+	7050 1700 6750 1700
+Wire Wire Line
+	6750 1700 6750 1100
+Wire Wire Line
+	6750 1100 7250 1100
+Wire Wire Line
+	8050 1700 8450 1700
+Text Label 6650 1900 2    60   ~ 0
+LOAD_IN
+Text Label 8450 1700 2    60   ~ 0
+LOAD_IN
+$Comp
+L Device:C C?
+U 1 1 5CB3F9D2
+P 8750 1500
+F 0 "C?" H 8750 1600 40  0000 L CNN
+F 1 "10uF" H 8756 1415 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 8788 1350 30  0001 C CNN
+F 3 "~" H 8750 1500 60  0000 C CNN
+	1    8750 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 1100 8750 1350
+Wire Wire Line
+	8050 1900 8750 1900
+Wire Wire Line
+	8750 1900 8750 1650
+Wire Wire Line
+	8750 2000 8750 1900
+Connection ~ 8750 1900
+Wire Wire Line
+	8050 2200 9050 2200
+Wire Wire Line
+	9050 2200 9050 1100
+Wire Wire Line
+	9050 1100 8750 1100
+Connection ~ 8750 1100
+Wire Wire Line
+	7050 2200 6850 2200
+Wire Wire Line
+	6850 2200 6850 1900
+Connection ~ 6850 1900
+Wire Wire Line
+	6850 1900 7050 1900
+Wire Wire Line
+	7050 2400 6300 2400
+Text GLabel 8900 2900 2    60   Input ~ 0
+DGND
+Wire Wire Line
+	8900 2900 8850 2900
+Wire Wire Line
+	8850 2900 8850 2800
+Wire Wire Line
+	8050 2400 8350 2400
+Wire Wire Line
+	8650 2400 8850 2400
+Wire Wire Line
+	8850 2400 8850 2500
+Wire Wire Line
+	8850 2400 9200 2400
+Connection ~ 8850 2400
+Text Label 9200 2400 0    60   ~ 0
+AIN_BAT_DIV_VOLTAGE
+Wire Wire Line
+	9050 1100 9200 1100
+Connection ~ 9050 1100
+Text GLabel 9300 1100 2    50   Output ~ 0
+1.8V
+$Comp
+L Device:C C?
+U 1 1 5CBCA18F
+P 6250 2100
+F 0 "C?" H 6250 2200 40  0000 L CNN
+F 1 "10uF" H 6256 2015 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6288 1950 30  0001 C CNN
+F 3 "~" H 6250 2100 60  0000 C CNN
+	1    6250 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1950 6250 1900
+Wire Wire Line
+	6250 1900 6850 1900
+Wire Wire Line
+	6250 2250 6250 2900
+Wire Wire Line
+	6250 2900 8850 2900
+Connection ~ 8850 2900
+Text Notes 6150 2250 1    50   ~ 0
+decoupling
+Wire Wire Line
+	8750 6450 11050 6450
+Wire Wire Line
+	11050 6450 11050 6250
+Wire Wire Line
+	11050 6250 11200 6250
+Wire Wire Line
+	11200 6350 11100 6350
+Wire Wire Line
+	11100 6350 11100 6550
+Wire Wire Line
+	11100 6550 8750 6550
+Text Label 9300 1300 0    60   ~ 0
+VDD_nRF
+Wire Wire Line
+	9200 1100 9200 1300
+Wire Wire Line
+	9200 1300 9300 1300
+Connection ~ 9200 1100
+Wire Wire Line
+	9200 1100 9300 1100
+Text GLabel 4650 3800 2    50   Input ~ 0
+1.8V
+Wire Wire Line
+	12850 8000 13500 8000
+Wire Wire Line
+	12950 7900 13500 7900
+Wire Wire Line
+	12950 7550 12950 7900
+Text Label 13500 7900 2    50   ~ 0
+MAX_SCL
+Text Label 13500 8000 2    50   ~ 0
+MAX_SDA
+Wire Wire Line
+	8750 1900 8850 1900
+Text GLabel 8850 1900 2    60   Input ~ 0
+DGND
+Text GLabel 6300 3900 0    50   Input ~ 0
+1.8V
+Text GLabel 3650 1800 3    50   Input ~ 0
+VccSwitch
+$Comp
+L MCU_Nordic:NRF528XX-QFAA U?
+U 1 1 5DADC35B
+P 12400 6350
+F 0 "U?" H 13641 6403 60  0000 L CNN
+F 1 "NRF528XX-QFAA" H 13641 6297 60  0000 L CNN
+F 2 "" H 12250 6250 60  0000 C CNN
+F 3 "" H 12250 6250 60  0000 C CNN
+	1    12400 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_SwitchedCapacitor:2450FM07A0029 F?
+U 1 1 5DADC6CF
+P 15650 6050
+F 0 "F?" H 15650 6637 60  0000 C CNN
+F 1 "2450FM07A0029" H 15650 6531 60  0000 C CNN
+F 2 "" H 15650 6050 60  0001 C CNN
+F 3 "" H 15650 6050 60  0001 C CNN
+	1    15650 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5DAE9489
+P 17650 6200
+F 0 "L?" V 17604 6278 50  0000 L CNN
+F 1 "2.7nH" V 17695 6278 50  0000 L CNN
+F 2 "" H 17650 6200 50  0001 C CNN
+F 3 "~" H 17650 6200 50  0001 C CNN
+	1    17650 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17650 5850 17650 5950
+Wire Wire Line
+	17650 6450 17650 6550
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5DB0305A
+P 17950 5850
+F 0 "L?" H 17950 5672 50  0000 C CNN
+F 1 "3.9nH" H 17950 5763 50  0000 C CNN
+F 2 "" H 17950 5850 50  0001 C CNN
+F 3 "~" H 17950 5850 50  0001 C CNN
+	1    17950 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	18200 5850 18350 5850
+$Comp
+L Device:Antenna AE?
+U 1 1 5DB10007
+P 18350 5600
+F 0 "AE?" H 18430 5591 50  0000 L CNN
+F 1 "Antenna" H 18430 5500 50  0000 L CNN
+F 2 "" H 18350 5600 50  0001 C CNN
+F 3 "~" H 18350 5600 50  0001 C CNN
+	1    18350 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor:MAX30102 IC?
+U 1 1 5DB2914D
+P 3100 9050
+F 0 "IC?" H 3300 9200 50  0000 R CNN
+F 1 "MAX30102" H 3250 9050 50  0000 R CNN
+F 2 "OptoDevice:Maxim_OLGA-14_3.3x5.6mm_P0.8mm" H 2950 9950 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX30102.pdf" H 2750 9300 50  0001 C CNN
+	1    3100 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:TPS62746 U?
+U 1 1 5DB29E1F
+P 7550 2050
+F 0 "U?" H 7550 2715 50  0000 C CNN
+F 1 "TPS62746" H 7550 2624 50  0000 C CNN
+F 2 "" H 7550 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps62746.pdf" H 7550 2050 50  0001 C CNN
+	1    7550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5DB2A04A
+P 7500 1100
+F 0 "L?" H 7500 1050 50  0000 C CNN
+F 1 "2.2uH" H 7500 1224 50  0000 C CNN
+F 2 "" H 7500 1100 50  0001 C CNN
+F 3 "~" H 7500 1100 50  0001 C CNN
+	1    7500 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 1100 8750 1100
+Wire Wire Line
+	2500 8950 2150 8950
+Text Label 1600 8950 2    50   ~ 0
+MAX_SCL
+Wire Wire Line
+	2500 9050 2400 9050
+Text Label 1600 9050 2    50   ~ 0
+MAX_SDA
+Text GLabel 2800 8300 1    50   Input ~ 0
+1.8V
+Wire Wire Line
+	2050 8350 2050 8150
+Wire Wire Line
+	2050 8350 2150 8350
+$Comp
+L Device:C C?
+U 1 1 5DBB06CF
+P 2050 8000
+F 0 "C?" H 2165 8046 50  0000 L CNN
+F 1 "0.1uF" H 2165 7955 50  0000 L CNN
+F 2 "" H 2088 7850 50  0001 C CNN
+F 3 "~" H 2050 8000 50  0001 C CNN
+	1    2050 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 8350 1550 8350
+Connection ~ 2050 8350
+$Comp
+L Device:C C?
+U 1 1 5DBBCDCD
+P 1550 8000
+F 0 "C?" H 1665 8046 50  0000 L CNN
+F 1 "4.7uF" H 1665 7955 50  0000 L CNN
+F 2 "" H 1588 7850 50  0001 C CNN
+F 3 "~" H 1550 8000 50  0001 C CNN
+	1    1550 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 8150 1550 8350
+Wire Wire Line
+	1550 7850 1800 7850
+Wire Wire Line
+	1800 7850 1800 7700
+Connection ~ 1800 7850
+Wire Wire Line
+	1800 7850 2050 7850
+Text GLabel 1800 7700 1    60   Input ~ 0
+DGND
+Text GLabel 3200 9550 3    60   Input ~ 0
+DGND
+Wire Wire Line
+	12250 1600 12250 1700
+Wire Wire Line
+	12250 1700 12350 1700
+Wire Wire Line
+	12250 1700 12250 1800
+Wire Wire Line
+	12250 2000 12350 2000
+Connection ~ 12250 1700
+Wire Wire Line
+	12350 1900 12250 1900
+Connection ~ 12250 1900
+Wire Wire Line
+	12250 1900 12250 2000
+Wire Wire Line
+	12350 1800 12250 1800
+Connection ~ 12250 1800
+Wire Wire Line
+	12250 1800 12250 1900
+$Comp
+L Device:C C?
+U 1 1 5DB9AB37
+P 11850 1750
+F 0 "C?" H 11965 1796 50  0000 L CNN
+F 1 "4.7uF" H 11965 1705 50  0000 L CNN
+F 2 "" H 11888 1600 50  0001 C CNN
+F 3 "~" H 11850 1750 50  0001 C CNN
+	1    11850 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11850 1600 12250 1600
+Text Label 11650 1600 2    60   ~ 0
+LOAD_IN
+Wire Wire Line
+	11650 1600 11850 1600
+Connection ~ 11850 1600
+Text GLabel 11850 1900 3    60   Input ~ 0
+DGND
+Text GLabel 14300 2250 3    60   Input ~ 0
+DGND
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5DBC718D
+P 14050 1800
+F 0 "L?" H 14050 1750 50  0000 C CNN
+F 1 "2.2uH" H 14050 1924 50  0000 C CNN
+F 2 "" H 14050 1800 50  0001 C CNN
+F 3 "~" H 14050 1800 50  0001 C CNN
+	1    14050 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13550 1800 13800 1800
+$Comp
+L TPS62743YFPT:TPS62743YFPT U?
+U 1 1 5DB2EFFC
+P 12950 1800
+F 0 "U?" H 12950 2267 50  0000 C CNN
+F 1 "TPS62743YFPT" H 12950 2176 50  0000 C CNN
+F 2 "BGA8N40P2X4_87X156X50" H 12950 1800 50  0001 L BNN
+F 3 "None" H 12950 1800 50  0001 L BNN
+F 4 "TPS62743YFPT" H 12950 1800 50  0001 L BNN "Field4"
+F 5 "DSBGA-8 Texas Instruments" H 12950 1800 50  0001 L BNN "Field5"
+F 6 "Unavailable" H 12950 1800 50  0001 L BNN "Field6"
+F 7 "Conv DC-DC Single Step Down 2.15V to 5.5V 8-Pin DSBGA T/R" H 12950 1800 50  0001 L BNN "Field7"
+F 8 "Texas Instruments" H 12950 1800 50  0001 L BNN "Field8"
+	1    12950 1800
+	1    0    0    -1  
+$EndComp
+Text Label 13550 1600 0    60   ~ 0
+LOAD_IN
+Wire Wire Line
+	12350 1600 12350 1100
+Wire Wire Line
+	14300 1100 14300 1800
+Wire Wire Line
+	12350 1100 14300 1100
+$Comp
+L Device:C C?
+U 1 1 5DC2148C
+P 14300 1950
+F 0 "C?" H 14415 1996 50  0000 L CNN
+F 1 "10uF" H 14415 1905 50  0000 L CNN
+F 2 "" H 14338 1800 50  0001 C CNN
+F 3 "~" H 14300 1950 50  0001 C CNN
+	1    14300 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 14300 1800
+Wire Wire Line
+	13550 2000 13550 2100
+Wire Wire Line
+	13550 2100 14300 2100
+Wire Wire Line
+	14300 2100 14300 2250
+Connection ~ 14300 2100
+Wire Wire Line
+	14300 1800 15050 1800
+Text GLabel 15050 1800 2    50   Output ~ 0
+3.3V
+Text GLabel 3000 8300 1    50   Input ~ 0
+3.3V
+Wire Wire Line
+	3000 8350 3000 8550
+Wire Wire Line
+	3000 8350 3100 8350
+Wire Wire Line
+	3100 8350 3100 8550
+Wire Wire Line
+	3000 8300 3000 8350
+Connection ~ 3000 8350
+$Comp
+L Power_Management:MCP73831 U?
+U 1 1 5DAD29FC
+P 3350 3550
+F 0 "U?" H 3350 4047 60  0000 C CNN
+F 1 "MCP73831" H 3350 3941 60  0000 C CNN
+F 2 "" H 3350 3550 60  0001 C CNN
+F 3 "" H 3350 3550 60  0001 C CNN
+	1    3350 3550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	11050 900  11050 3100
+Wire Notes Line
+	11050 3100 15400 3100
+Wire Notes Line
+	15400 3100 15400 900 
+Wire Notes Line
+	15400 900  11050 900 
+Text Notes 11050 900  0    60   ~ 0
+3.3V Regulator\n
+$Comp
+L Device:LED D?
+U 1 1 5DB1B1E2
+P 6950 3900
+F 0 "D?" H 6942 3645 50  0000 C CNN
+F 1 "LED" H 6942 3736 50  0000 C CNN
+F 2 "" H 6950 3900 50  0001 C CNN
+F 3 "~" H 6950 3900 50  0001 C CNN
+	1    6950 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7100 3900 7700 3900
+Wire Wire Line
+	6300 3900 6800 3900
+Text GLabel 6300 4200 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	6300 4200 6800 4200
+$Comp
+L Device:LED D?
+U 1 1 5DB37A06
+P 6950 4200
+F 0 "D?" H 6942 3945 50  0000 C CNN
+F 1 "LED" H 6942 4036 50  0000 C CNN
+F 2 "" H 6950 4200 50  0001 C CNN
+F 3 "~" H 6950 4200 50  0001 C CNN
+	1    6950 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7100 4200 7700 4200
+$Comp
+L Device:LED D?
+U 1 1 5DB45CCB
+P 4300 3800
+F 0 "D?" H 4291 4016 50  0000 C CNN
+F 1 "LED" H 4291 3925 50  0000 C CNN
+F 2 "" H 4300 3800 50  0001 C CNN
+F 3 "~" H 4300 3800 50  0001 C CNN
+	1    4300 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3800 4650 3800
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5DB53FF3
+P 3250 5650
+F 0 "J?" H 3170 5325 50  0000 C CNN
+F 1 "Conn_01x02" H 3170 5416 50  0000 C CNN
+F 2 "" H 3250 5650 50  0001 C CNN
+F 3 "~" H 3250 5650 50  0001 C CNN
+	1    3250 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 5550 4100 5550
+$Comp
+L power:GND #PWR?
+U 1 1 5DB703BB
+P 4200 5900
+F 0 "#PWR?" H 4200 5650 50  0001 C CNN
+F 1 "GND" H 4205 5727 50  0000 C CNN
+F 2 "" H 4200 5900 50  0001 C CNN
+F 3 "" H 4200 5900 50  0001 C CNN
+	1    4200 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5DB7E740
+P 1650 5750
+F 0 "J?" H 1570 5425 50  0000 C CNN
+F 1 "Conn_01x02" H 1570 5516 50  0000 C CNN
+F 2 "" H 1650 5750 50  0001 C CNN
+F 3 "~" H 1650 5750 50  0001 C CNN
+	1    1650 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 5650 2300 5650
+Wire Wire Line
+	3450 5650 4200 5650
+$Comp
+L power:GND #PWR?
+U 1 1 5DB8CBB2
+P 2300 6000
+F 0 "#PWR?" H 2300 5750 50  0001 C CNN
+F 1 "GND" H 2305 5827 50  0000 C CNN
+F 2 "" H 2300 6000 50  0001 C CNN
+F 3 "" H 2300 6000 50  0001 C CNN
+	1    2300 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 5750 2300 5750
+Wire Wire Line
+	2300 5750 2300 6000
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5DB9B35B
+P 1700 6800
+F 0 "J?" H 1620 6475 50  0000 C CNN
+F 1 "Conn_01x02" H 1620 6566 50  0000 C CNN
+F 2 "" H 1700 6800 50  0001 C CNN
+F 3 "~" H 1700 6800 50  0001 C CNN
+	1    1700 6800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 6700 2550 6700
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5DBF0CD5
+P 12600 4300
+F 0 "L?" V 12554 4378 50  0000 L CNN
+F 1 "10uH" H 12600 4450 50  0000 L CNN
+F 2 "" H 12600 4300 50  0001 C CNN
+F 3 "~" H 12600 4300 50  0001 C CNN
+	1    12600 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 4300 13100 4300
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5DBFF57E
+P 13350 4300
+F 0 "L?" V 13304 4378 50  0000 L CNN
+F 1 "15nH" H 13350 4450 50  0000 L CNN
+F 2 "" H 13350 4300 50  0001 C CNN
+F 3 "~" H 13350 4300 50  0001 C CNN
+	1    13350 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13600 4300 13700 4300
+Connection ~ 13700 4300
+Wire Wire Line
+	2800 8300 2800 8350
+Wire Wire Line
+	2800 8350 2800 8550
+Connection ~ 2800 8350
+Wire Wire Line
+	4000 8350 4000 8150
+$Comp
+L Device:C C?
+U 1 1 5DC2A856
+P 4000 8000
+F 0 "C?" H 4115 8046 50  0000 L CNN
+F 1 "0.1uF" H 4115 7955 50  0000 L CNN
+F 2 "" H 4038 7850 50  0001 C CNN
+F 3 "~" H 4000 8000 50  0001 C CNN
+	1    4000 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 8350 3500 8350
+$Comp
+L Device:C C?
+U 1 1 5DC2A85F
+P 3500 8000
+F 0 "C?" H 3615 8046 50  0000 L CNN
+F 1 "10uF" H 3615 7955 50  0000 L CNN
+F 2 "" H 3538 7850 50  0001 C CNN
+F 3 "~" H 3500 8000 50  0001 C CNN
+	1    3500 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 8150 3500 8350
+Wire Wire Line
+	3500 7850 3750 7850
+Wire Wire Line
+	3750 7850 3750 7700
+Connection ~ 3750 7850
+Wire Wire Line
+	3750 7850 4000 7850
+Text GLabel 3750 7700 1    60   Input ~ 0
+DGND
+Wire Wire Line
+	3100 8350 3500 8350
+Connection ~ 3100 8350
+Connection ~ 3500 8350
+Text GLabel 3000 9550 3    60   Input ~ 0
+DGND
+Wire Wire Line
+	2150 8950 2150 8800
+Connection ~ 2150 8950
+Wire Wire Line
+	2150 8950 1600 8950
+$Comp
+L Device:R R?
+U 1 1 5DC770E5
+P 2150 8650
+F 0 "R?" H 2220 8696 50  0000 L CNN
+F 1 "1k" H 2220 8605 50  0000 L CNN
+F 2 "" V 2080 8650 50  0001 C CNN
+F 3 "~" H 2150 8650 50  0001 C CNN
+	1    2150 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 8500 2150 8350
+Connection ~ 2150 8350
+Wire Wire Line
+	2150 8350 2400 8350
+Connection ~ 2400 9050
+Wire Wire Line
+	2400 9050 1600 9050
+$Comp
+L Device:R R?
+U 1 1 5DC96A87
+P 2400 8650
+F 0 "R?" H 2470 8696 50  0000 L CNN
+F 1 "1k" H 2470 8605 50  0000 L CNN
+F 2 "" V 2330 8650 50  0001 C CNN
+F 3 "~" H 2400 8650 50  0001 C CNN
+	1    2400 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 8800 2400 9050
+Wire Wire Line
+	2400 8500 2400 8350
+Connection ~ 2400 8350
+Wire Wire Line
+	2400 8350 2800 8350
+Wire Wire Line
+	3700 9050 3950 9050
+Text Label 4050 9050 0    50   ~ 0
+MAX_INT(N)
+Wire Wire Line
+	3950 9050 3950 8700
+Wire Wire Line
+	3950 8700 4200 8700
+Connection ~ 3950 9050
+Wire Wire Line
+	3950 9050 4050 9050
+$Comp
+L Device:R R?
+U 1 1 5DCD8940
+P 4350 8700
+F 0 "R?" V 4143 8700 50  0000 C CNN
+F 1 "1k" V 4234 8700 50  0000 C CNN
+F 2 "" V 4280 8700 50  0001 C CNN
+F 3 "~" H 4350 8700 50  0001 C CNN
+	1    4350 8700
+	0    1    1    0   
+$EndComp
+Text GLabel 4500 8700 2    50   Input ~ 0
+1.8V
+NoConn ~ 3700 9250
+NoConn ~ 3700 9350
+Wire Notes Line
+	1050 7350 5200 7350
+Wire Notes Line
+	5200 7350 5200 9850
+Wire Notes Line
+	5200 9850 1050 9850
+Wire Notes Line
+	1050 9850 1050 7350
+Text Notes 1100 7350 0    60   ~ 0
+MAX30102
+$EndSCHEMATC
